@@ -52,6 +52,7 @@ return {
 
         map('n', 'gs', '<cmd>Git<CR>', { desc = 'git status' })
         map('n', 'g<space>', ':Git ', { desc = 'git' })
+        map('n', 'gl', '<cmd>Flog<CR>', { desc = 'git log' })
     end,
 
     telescope = {
