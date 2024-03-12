@@ -1,0 +1,8 @@
+directory: ~/Music
+library: ~/data/musiclibrary.db
+plugins: convert missing duplicates lastgenre
+
+convert:
+  auto: yes
+  never_convert_lossy_files: yes
+  format: alac
