@@ -1,6 +1,8 @@
 if status is-interactive
   set fish_greeting
 
+  fish_config theme choose "Rosé Pine Moon"
+
   set EDITOR nvim
 
   set -Ux SSH_AUTH_SOCK $(gpgconf --list-dirs agent-ssh-socket)
