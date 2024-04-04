@@ -6,3 +6,6 @@ convert:
   auto: yes
   never_convert_lossy_files: yes
   format: alac
+  # # weird hack, disable a modern AAC feature to make them play on iPods
+  # command: ffmpeg -i $source -y -c:a aac -vn -aac_pns 0 $dest
+  # extension: m4a
