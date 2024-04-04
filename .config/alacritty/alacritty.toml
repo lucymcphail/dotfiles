@@ -1,0 +1,5 @@
+import = ["/home/lucy/.config/alacritty/rose-pine.toml"]
+
+[font.normal]
+family = "CozetteHiDpi"
+style = "Regular"
