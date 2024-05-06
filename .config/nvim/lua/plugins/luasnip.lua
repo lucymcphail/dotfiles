@@ -7,7 +7,7 @@ local config = function()
         paths = { '~/.config/nvim/snippets' },
     })
 
-    vim.keymap.set({ 'i' }, '<Tab>', function()
+    vim.keymap.set({ 'i' }, '<C-k>', function()
         ls.expand()
     end, { silent = true })
     vim.keymap.set({ 'i', 's' }, '<C-f>', function()
