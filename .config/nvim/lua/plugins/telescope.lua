@@ -31,6 +31,5 @@ return {
         },
     },
     config = config,
-    keys = require('config.keymaps').telescope,
     cmd = 'Telescope',
 }

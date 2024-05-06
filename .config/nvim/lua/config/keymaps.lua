@@ -53,11 +53,9 @@ return {
         map('n', 'gs', '<cmd>Git<CR>', { desc = 'git status' })
         map('n', 'g<space>', ':Git ', { desc = 'git' })
         map('n', 'gl', '<cmd>Flog<CR>', { desc = 'git log' })
-    end,
 
-    telescope = {
-        { '<leader>b', telescope.buffers, desc = 'buffers' },
-        {
+        map('n', '<leader>b', telescope.buffers, { desc = 'buffers' })
+        map('n', 
             '<leader>f',
             function()
                 telescope.find_files({
@@ -70,20 +68,20 @@ return {
                     },
                 })
             end,
-            desc = 'files',
-        },
-        {
+            { desc = 'files',
+        })
+        map('n', 
             '<leader>F',
             function()
                 telescope.find_files({ cwd = vim.fn.expand('%:p:h') })
             end,
-            desc = 'relative files',
-        },
-        { '<leader>o', telescope.oldfiles, desc = 'oldfiles' },
-        { '<leader>/', telescope.live_grep, desc = 'grep' },
-        { 'gb', telescope.git_branches, desc = 'git branches' },
-        { 'z=', telescope.spell_suggest, desc = 'spell suggest' },
-    },
+            { desc = 'relative files',
+        })
+        map('n', '<leader>o', telescope.oldfiles, { desc = 'oldfiles' })
+        map('n', '<leader>/', telescope.live_grep, { desc = 'grep' })
+        map('n', 'gb', telescope.git_branches, { desc = 'git branches' })
+        map('n', 'z=', telescope.spell_suggest, { desc = 'spell suggest' })
+    end,
 
     lsp_local = function(_, buffer)
         local nmap = function(keys, func, desc)
