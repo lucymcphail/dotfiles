@@ -1,5 +1,5 @@
 -- vim.cmd.colorscheme('melange')
-vim.cmd.colorscheme('rose-pine')
+vim.cmd.colorscheme('kanagawa-dragon')
 
 -- highlight on yank
 local highlight_group =
