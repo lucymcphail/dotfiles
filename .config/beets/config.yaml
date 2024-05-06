@@ -1,9 +1,12 @@
 directory: ~/Music
 library: ~/data/musiclibrary.db
-plugins: convert missing duplicates lastgenre
+plugins: convert missing duplicates lastgenre replaygain mbsync
+
+replaygain:
+  backend: ffmpeg
 
 convert:
-  auto: yes
+  auto: no
   never_convert_lossy_files: yes
   format: alac
   # # weird hack, disable a modern AAC feature to make them play on iPods
