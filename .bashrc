@@ -126,10 +126,6 @@ fi
 
 export EDITOR=nvim
 
-alias e="$EDITOR"
-alias g=git
-alias lg=lazygit
-
 # Created by `pipx` on 2024-05-06 17:08:47
 export PATH="$PATH:/home/lucy/.local/bin"
 
