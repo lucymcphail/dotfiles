@@ -1,6 +1,12 @@
 directory: ~/Music
-library: ~/data/musiclibrary.db
-plugins: convert missing duplicates lastgenre replaygain mbsync
+library: ~/Music/musiclibrary.db
+plugins:
+  - convert
+  - duplicates
+  - fetchart
+  - lastgenre
+  - missing
+  - replaygain
 
 replaygain:
   backend: ffmpeg
