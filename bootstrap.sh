@@ -15,7 +15,7 @@ sudo apt install \
 	stow \
 	vim \
 
-stow dotfiles --dir=$HOME --target=$HOME
+stow --no-folding . --dir=$HOME/dotfiles --target=$HOME
 
 SRC=$HOME/src
 
