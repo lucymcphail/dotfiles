@@ -129,7 +129,7 @@ export EDITOR=nvim
 # Created by `pipx` on 2024-05-06 17:08:47
 export PATH="$PATH:/home/lucy/.local/bin"
 
-export PATH="$PATH:/home/lucy/.local/share/bob/nvim-bin/"
+eval "$(~/.local/bin/mise activate bash)"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"

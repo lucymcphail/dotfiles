@@ -15,7 +15,7 @@ sudo apt install \
 	stow \
 	vim \
 
-stow --no-folding . --dir=$HOME/dotfiles --target=$HOME
+./.local/bin/stowdots
 
 SRC=$HOME/src
 
@@ -30,6 +30,9 @@ if [[ -z "${SRC}/Gogh" ]]; then
 fi
 export TERMINAL=gnome-terminal
 ./Gogh/installs/kanagawa-dragon.sh
+
+# install mise
+curl https://mise.run | sh
 
 # install ble.sh
 if [[ -z "${SRC}/ble.sh" ]]; then
