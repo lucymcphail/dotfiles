@@ -3,6 +3,7 @@ library: ~/Music/musiclibrary.db
 plugins:
   - convert
   - duplicates
+  - embedart
   - fetchart
   - lastgenre
   - missing
