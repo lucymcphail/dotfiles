@@ -1,10 +1,6 @@
 local config = function()
-    local on_attach = function(client, buffer)
-        if client.server_capabilities.inlayHintProvider then
-            vim.lsp.inlay_hint.enable(buffer, true)
-        end
-
-        require('config.keymaps').lsp_local(client, buffer)
+    local on_attach = function(client, bufnr)
+        require('config.keymaps').lsp_local(client, bufnr)
 
         vim.lsp.handlers['textDocument/hover'] =
             vim.lsp.with(vim.lsp.handlers.hover, { border = 'rounded' })
@@ -13,6 +9,11 @@ local config = function()
             vim.lsp.handlers.signature_help,
             { border = 'rounded' }
         )
+
+        if client.server_capabilities.inlayHintProvider then
+            vim.g.inlay_hints_visible = true
+            vim.lsp.inlay_hint.enable()
+        end
     end
 
     vim.diagnostic.config({

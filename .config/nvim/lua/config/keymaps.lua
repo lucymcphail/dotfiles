@@ -55,7 +55,7 @@ return {
         map('n', 'gl', '<cmd>Flog<CR>', { desc = 'git log' })
 
         map('n', '<leader>b', telescope.buffers, { desc = 'buffers' })
-        map('n', 
+        map('n',
             '<leader>f',
             function()
                 telescope.find_files({
@@ -70,7 +70,7 @@ return {
             end,
             { desc = 'files',
         })
-        map('n', 
+        map('n',
             '<leader>F',
             function()
                 telescope.find_files({ cwd = vim.fn.expand('%:p:h') })
