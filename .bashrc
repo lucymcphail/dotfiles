@@ -124,6 +124,7 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
+export BROWSER=firefox
 export EDITOR=nvim
 
 # Created by `pipx` on 2024-05-06 17:08:47
